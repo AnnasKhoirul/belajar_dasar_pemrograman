@@ -1,0 +1,183 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+main {
+  overflow: auto;
+  padding-bottom: 10px
+}
+
+nav {
+  overflow: hidden;
+  background-color: #FF8C00;
+  padding-bottom: 10px
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav a {
+  float: left;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+  font-weight: bold;
+}
+
+#content {
+  float: left;
+  width: 75%;
+  text-align: justify;
+}
+
+#content h2 {
+  background-color: #FF8C00;
+  color: #f1f1f1;
+}
+
+.left-image {
+  width: 250px;
+  float: left;
+  padding-right: 10px
+}
+
+.right-image {
+  width: 250px;
+  float: right;
+  padding-left: 10px;
+}
+
+aside {
+  float: right;
+  width: 25%
+  padding-left: 10px;
+}
+
+.profile h2, h3 {
+  text-align: center;
+  color: #FF8C00;
+}
+
+.profile header {
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #FF8C00;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  #content, .aside {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1; 
+  width: 200px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #DDA0DD;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.fb {
+  background-color: #1E90FF;
+}
+
+.yt {
+	background-color: #FF0000;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.bar {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 60%; background-color: #f44336;}
+.php {width: 50%; background-color: #808080;}
